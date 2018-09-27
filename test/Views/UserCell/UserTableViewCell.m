@@ -24,8 +24,8 @@
 
 -(void)setData:(id) objectData{
     User *user=objectData;
-    self.userId.text=user.userid;
-    self.userName.text=user.username;
+    self.userId.text=[user valueForKey:@"username"];
+    self.userName.text=[user valueForKey:@"id"];
 }
 
 @end

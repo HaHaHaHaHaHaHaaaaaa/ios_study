@@ -39,7 +39,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="jxg-IQ-u75"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="排行榜" id="aG0-J1-KGE"/>
+                    <tabBarItem key="tabBarItem" title="排行榜" image="ranking" selectedImage="ranking_active" id="aG0-J1-KGE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P09-6i-ebp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -66,7 +66,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="qvH-IQ-SeP"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="我的" id="U0y-8v-mJH"/>
+                    <tabBarItem key="tabBarItem" title="我的" image="me" selectedImage="me_active" id="U0y-8v-mJH"/>
                     <connections>
                         <outlet property="myTableView" destination="y3K-wU-KS1" id="oiF-6h-emR"/>
                     </connections>
@@ -103,7 +103,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="m9p-sp-Js6"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="首页" id="gAh-Lt-72Y"/>
+                    <tabBarItem key="tabBarItem" title="首页" image="home" selectedImage="home_active" id="gAh-Lt-72Y"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eh8-oY-Bnw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -194,4 +194,12 @@
             <point key="canvasLocation" x="49" y="160"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="home" width="32" height="32"/>
+        <image name="home_active" width="32" height="32"/>
+        <image name="me" width="32" height="32"/>
+        <image name="me_active" width="32" height="32"/>
+        <image name="ranking" width="32" height="31"/>
+        <image name="ranking_active" width="32" height="31"/>
+    </resources>
 </document>

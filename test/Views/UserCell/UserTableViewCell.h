@@ -10,6 +10,7 @@
 
 @interface UserTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *userId;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UILabel *userName;
 -(void)setData:(id) objectData;
 @end

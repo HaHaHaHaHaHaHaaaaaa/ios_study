@@ -640,11 +640,40 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/FirKSCrashSDK",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/BaiduLoc_iOSSDK_Libs_No_Bitcode_No_IDFA_v1.1",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/AliPay",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/ShareSDK/Support/PlatformSDK/RenRenSDK",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/ShareSDK/Support/PlatformSDK/FacebookMessengerSDK",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/ShareSDK/Support/PlatformSDK/QQSDK",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/ShareSDK/Support/PlatformSDK/KaKaoSDK",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/ShareSDK/Support/Required",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/ShareSDK/Support/Required",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/ShareSDK/Support/Optional",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/ShareSDK/Support/Optional",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/ShareSDK/Support/Optional",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/ShareSDK",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/DTCloudKit",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/DTCloudKit",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/IPSpaySDK",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/Bugly",
+				);
 				INFOPLIST_FILE = test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/ShareSDK/Support/PlatformSDK/SinaWeiboSDK",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/ShareSDK/Support/PlatformSDK/WeChatSDK",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/ShareSDK/Support/PlatformSDK/APSocialSDK",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/ShareSDK/Support/PlatformSDK/YiXinSDK",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/IPSpaySDK/SDKExport",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/JPUSH/JPUSH",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wanbeli.abc.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -658,11 +687,40 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/FirKSCrashSDK",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/BaiduLoc_iOSSDK_Libs_No_Bitcode_No_IDFA_v1.1",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/AliPay",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/ShareSDK/Support/PlatformSDK/RenRenSDK",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/ShareSDK/Support/PlatformSDK/FacebookMessengerSDK",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/ShareSDK/Support/PlatformSDK/QQSDK",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/ShareSDK/Support/PlatformSDK/KaKaoSDK",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/ShareSDK/Support/Required",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/ShareSDK/Support/Required",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/ShareSDK/Support/Optional",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/ShareSDK/Support/Optional",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/ShareSDK/Support/Optional",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/ShareSDK",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/DTCloudKit",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/DTCloudKit",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/IPSpaySDK",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/Bugly",
+				);
 				INFOPLIST_FILE = test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/ShareSDK/Support/PlatformSDK/SinaWeiboSDK",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/ShareSDK/Support/PlatformSDK/WeChatSDK",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/ShareSDK/Support/PlatformSDK/APSocialSDK",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/ShareSDK/Support/PlatformSDK/YiXinSDK",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/IPSpaySDK/SDKExport",
+					"$(PROJECT_DIR)/New\\ Group/kuwa/KuWaWaterSecond/Vender/JPUSH/JPUSH",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wanbeli.abc.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";

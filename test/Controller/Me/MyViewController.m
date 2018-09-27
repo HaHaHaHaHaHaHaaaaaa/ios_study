@@ -62,11 +62,9 @@
                       initWithStyle:UITableViewCellStyleDefault
                       reuseIdentifier:TableViewCellIdentifier];
         }
-        User *user=_stuArr[indexPath.row];
+  
+        [result setData:_stuArr[indexPath.row]];
 
-        result.userName.text=[user valueForKey:@"username"];
-        result.userId.text=[user valueForKey:@"id"];
-     
     }
     return result;
 

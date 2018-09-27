@@ -20,14 +20,18 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="userId" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0NV-WK-5hx">
-                        <rect key="frame" x="16" y="11" width="184" height="31"/>
+                        <rect key="frame" x="106" y="11" width="214" height="38"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ranking_active" translatesAutoresizingMaskIntoConstraints="NO" id="gam-Dt-otv">
+                        <rect key="frame" x="16" y="34" width="69" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="userName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FjD-M7-7Yq">
-                        <rect key="frame" x="16" y="68" width="277" height="35"/>
+                        <rect key="frame" x="106" y="68" width="214" height="35"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -37,10 +41,14 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
+                <outlet property="imageView" destination="gam-Dt-otv" id="ydJ-f6-Ta7"/>
                 <outlet property="userId" destination="0NV-WK-5hx" id="fPF-pF-3Aa"/>
                 <outlet property="userName" destination="FjD-M7-7Yq" id="ica-yv-zYv"/>
             </connections>
             <point key="canvasLocation" x="25" y="87"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="ranking_active" width="32" height="31"/>
+    </resources>
 </document>
