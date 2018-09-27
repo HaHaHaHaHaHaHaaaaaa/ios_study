@@ -10,6 +10,8 @@
 		A243BE4C215B727500D2353A /* HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A243BE4B215B727500D2353A /* HttpManager.m */; };
 		A243BE51215B94C600D2353A /* UserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A243BE4F215B94C600D2353A /* UserTableViewCell.m */; };
 		A243BE52215B94C600D2353A /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A243BE50215B94C600D2353A /* UserTableViewCell.xib */; };
+		A2C534D4215CDE5600B71097 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A2C534D2215CDE5600B71097 /* ProgressHUD.bundle */; };
+		A2C534D5215CDE5600B71097 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C534D3215CDE5600B71097 /* ProgressHUD.m */; };
 		A2CE0681215B2A360065CA00 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CE0680215B2A360065CA00 /* AppDelegate.m */; };
 		A2CE0687215B2A360065CA00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2CE0685215B2A360065CA00 /* Main.storyboard */; };
 		A2CE0689215B2A370065CA00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2CE0688215B2A370065CA00 /* Assets.xcassets */; };
@@ -55,6 +57,9 @@
 		A243BE4E215B94C600D2353A /* UserTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserTableViewCell.h; sourceTree = "<group>"; };
 		A243BE4F215B94C600D2353A /* UserTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserTableViewCell.m; sourceTree = "<group>"; };
 		A243BE50215B94C600D2353A /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		A2C534D1215CDE5600B71097 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		A2C534D2215CDE5600B71097 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		A2C534D3215CDE5600B71097 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
 		A2CE067C215B2A360065CA00 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2CE067F215B2A360065CA00 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2CE0680215B2A360065CA00 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -149,6 +154,16 @@
 				A243BE50215B94C600D2353A /* UserTableViewCell.xib */,
 			);
 			path = UserCell;
+			sourceTree = "<group>";
+		};
+		A2C534D0215CDE5600B71097 /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				A2C534D1215CDE5600B71097 /* ProgressHUD.h */,
+				A2C534D2215CDE5600B71097 /* ProgressHUD.bundle */,
+				A2C534D3215CDE5600B71097 /* ProgressHUD.m */,
+			);
+			path = ProgressHUD;
 			sourceTree = "<group>";
 		};
 		A2CE0673215B2A360065CA00 = {
@@ -295,6 +310,7 @@
 		A2CE06D3215B6CB60065CA00 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				A2C534D0215CDE5600B71097 /* ProgressHUD */,
 				A2CE06EC215B6CCE0065CA00 /* AFNetworking */,
 			);
 			path = Vendor;
@@ -428,6 +444,7 @@
 				A243BE52215B94C600D2353A /* UserTableViewCell.xib in Resources */,
 				A2CE068C215B2A370065CA00 /* LaunchScreen.storyboard in Resources */,
 				A2CE0689215B2A370065CA00 /* Assets.xcassets in Resources */,
+				A2C534D4215CDE5600B71097 /* ProgressHUD.bundle in Resources */,
 				A2CE0687215B2A360065CA00 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,6 +470,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2C534D5215CDE5600B71097 /* ProgressHUD.m in Sources */,
 				A2CE06CB215B573B0065CA00 /* User.m in Sources */,
 				A2CE0708215B6CCE0065CA00 /* AFURLSessionManager.m in Sources */,
 				A2CE070B215B6CCE0065CA00 /* AFSecurityPolicy.m in Sources */,

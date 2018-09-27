@@ -17,6 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self initUI];
+}
+
+-(void)initUI{
+   
+    UIImageView *imgView=[[UIImageView alloc]initWithFrame:CGRectMake(50, 50, 100, 100)];
+     UIImage *image= [UIImage imageNamed:@"home.png"];
+    [imgView setImage:image];
+    [self.view addSubview:imgView];
 }
 
 - (void)didReceiveMemoryWarning {

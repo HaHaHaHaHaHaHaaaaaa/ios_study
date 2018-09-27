@@ -7,7 +7,7 @@
 //
 
 #import "RankingsViewController.h"
-
+#import "ProgressHUD.h"
 @interface RankingsViewController ()
 
 @end
@@ -19,6 +19,12 @@
     
      self.tabBarController.navigationItem.title=@"排行榜";
     NSLog(@"rankings did load");
+    [ProgressHUD show:@"Please wait..."];
+    
+    [NSTimer scheduledTimerWithTimeInterval:1 repeats:NO block:^(NSTimer * _Nonnull timer) {
+           NSLog(@"延时结束");
+        [ProgressHUD dismiss];
+    }] ;
     // Do any additional setup after loading the view.
 }
 
