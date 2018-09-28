@@ -10,6 +10,7 @@
 #import "HttpManager.h"
 #import "User.h"
 #import "UserTableViewCell.h"
+#import "MJRefresh.h"
 @interface MyViewController ()
 {
     NSMutableArray * _stuArr;
@@ -26,21 +27,43 @@
     NSLog(@"me did loaded");
 
     _stuArr=[NSMutableArray new];
+    
     [ myTableView registerNib:[UINib nibWithNibName:@"UserTableViewCell" bundle:nil] forCellReuseIdentifier:@"UserCell"];
+//    UIView *view=[[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 120)];
+//    view.backgroundColor=[UIColor redColor];
+    myTableView.tableFooterView=[UIView new];
+    [self initRefresher];
+    
+//    [self loadData];
+    
+    
+}
+
+-(void)loadData{
     // Do any additional setup after loading the view.
     NSDictionary * dict=@{
-                          @"url":@"http://192.168.50.2:3000/stu",
+                          @"url":@"http://192.168.50.254:3000/stu",
                           @"params":@""
                           };
-
+   [myTableView.mj_header beginRefreshing];
     [HttpManager get:dict suc:^(NSArray *success) {
-
         self->_stuArr=[NSMutableArray arrayWithArray:success];
-//         NSLog(@"success:%@",self->_stuArr);
         [self->myTableView reloadData];
+        [self->myTableView.mj_header endRefreshing];
     } fai:^(NSObject *failed) {
+        [self->myTableView.mj_header endRefreshing];
+        self-> _stuArr=[NSMutableArray arrayWithArray:@[]];
         NSLog(@"failed:%@",failed);
     }];
+}
+
+-(void)initRefresher{
+    myTableView.mj_header=[MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        //Call this Block When enter the refresh status automatically
+        [self loadData];
+    }];
+   
+    [myTableView.mj_header beginRefreshing];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{

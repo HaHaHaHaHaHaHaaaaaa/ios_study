@@ -8,6 +8,7 @@
 
 #import "RankingsViewController.h"
 #import "ProgressHUD.h"
+#import "SDCycleScrollView.h"
 @interface RankingsViewController ()
 
 @end
@@ -24,8 +25,21 @@
     [NSTimer scheduledTimerWithTimeInterval:1 repeats:NO block:^(NSTimer * _Nonnull timer) {
            NSLog(@"延时结束");
         [ProgressHUD dismiss];
+        
+        [self initBanner];
     }] ;
     // Do any additional setup after loading the view.
+}
+
+-(void)initBanner{
+    // 网络加载图片的轮播器
+//    SDCycleScrollView *cycleScrollView = [cycleScrollViewWithFrame:frame delegate:delegate placeholderImage:nil];
+//    cycleScrollView.imageURLStringsGroup = imagesURLStrings;
+    
+    // 本地加载图片的轮播器
+    SDCycleScrollView *cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0,self.view.frame.size.width, 300) imageURLStringsGroup:@[@"b1",@"b2"]];
+    
+    [self.view addSubview:cycleScrollView];
 }
 
 - (void)didReceiveMemoryWarning {
