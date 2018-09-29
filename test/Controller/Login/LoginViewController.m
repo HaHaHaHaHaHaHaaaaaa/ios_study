@@ -22,10 +22,10 @@
 
 -(void)initUI{
    
-    UIImageView *imgView=[[UIImageView alloc]initWithFrame:CGRectMake(50, 50, 100, 100)];
-     UIImage *image= [UIImage imageNamed:@"home.png"];
-    [imgView setImage:image];
-    [self.view addSubview:imgView];
+//    UIImageView *imgView=[[UIImageView alloc]initWithFrame:CGRectMake(50, 50, 100, 100)];
+//     UIImage *image= [UIImage imageNamed:@"home.png"];
+//    [imgView setImage:image];
+//    [self.view addSubview:imgView];
 }
 
 - (void)didReceiveMemoryWarning {
